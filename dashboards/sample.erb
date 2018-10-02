@@ -1,0 +1,59 @@
+<% content_for :title do %>Greenbox<% end %>
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="image" data-view="Image" data-image="/logo.png"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div id="weatherr" style="background-color:white;padding-top: 30px;padding-bottom:30px">
+          <a class="weatherwidget-io" href="https://forecast7.com/es/25d69n100d32/monterrey/" data-label_1="MONTERREY" data-label_2="TEMPERATURA" data-days="3" data-theme="pure" >MONTERREY TEMPERATURA</a>
+          <script>
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
+        </div>
+      </li>
+
+<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+<div data-id="basedatos" data-view="HotStatus" data-title="Status del parque">
+</li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="twitter_mentions" data-view="Tweets" style="background-color:#666666;" data-moreinfo="Tweets relevantes"></div>
+      <i class="icon-twitter icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="datos" data-view="List" data-unordered="true" data-title="Sensores en el parque" data-moreinfo="% detectado"></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="linechart2" data-view ="LineChart" data-title="" data-moreinfo="Visitantes al parque"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="basura" data-view="Meter" data-title="Contenedores de basura" data-height="200" data-width="200" data-min="0" data-max="100" data-suffix="%"></div>
+    </li>
+
+
+    <li data-row="2" data-col="1" data-sizex="2" data-sizey="1">
+    <div
+  data-id="bar-chart"
+  data-view="Chartjs"
+  data-type="bar"
+  data-labels="Humedad, Limpieza , Luz ,Obstrucciones,Trafico de personas"
+  data-colornames="yellow,blue,red,yellow,green"
+  data-datasets="210,339,220,494,109"
+  data-height="400"
+  data-width="400"
+></div>
+</li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <!-- SnapWidget -->
+      <!-- SnapWidget -->
+      <p style="text-align:center"> Instagram feed </p>
+      <br>
+      <script src="https://snapwidget.com/js/snapwidget.js"></script>
+      <iframe src="https://snapwidget.com/embed/603329" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe></li>
+
+  </ul>
+</div>
